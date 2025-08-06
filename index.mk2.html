@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mon Site Web</title>
+    <style>
+        /* Reset CSS */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+        }
+
+        /* Header */
+        header {
+            background-color: #333;
+            color: white;
+            padding: 1rem;
+            text-align: center;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            padding: 1rem;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+        }
+
+        /* Contenu principal */
+        .hero {
+            padding: 4rem 2rem;
+            text-align: center;
+            background-color: #f4f4f4;
+        }
+
+        .features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            padding: 2rem;
+        }
+
+        .feature-card {
+            border: 1px solid #ddd;
+            padding: 1.5rem;
+            border-radius: 8px;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 1.5rem;
+            margin-top: 2rem;
+        }
+
+        /* Responsive design */
+        @media (max-width: 768px) {
+            nav {
+                flex-direction: column;
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Mon Super Site</h1>
+        <nav>
+            <a href="#accueil">Accueil</a>
+            <a href="#services">Services</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <h2>Bienvenue sur notre site</h2>
+        <p>Découvrez nos services exceptionnels</p>
+    </section>
+
+    <section class="features">
+        <div class="feature-card">
+            <h3>Service 1</h3>
+            <p>Description du service proposé</p>
+        </div>
+        <div class="feature-card">
+            <h3>Service 2</h3>
+            <p>Description du service proposé</p>
+        </div>
+        <div class="feature-card">
+            <h3>Service 3</h3>
+            <p>Description du service proposé</p>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Mon Site Web. Tous droits réservés.</p>
+    </footer>
+</body>
+</html>
